@@ -1,0 +1,30 @@
+{
+  "name": "marcador-de-mapas",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.manuel_zhurong.marcadormapas",
+    "productName": "Marcador de Mapas",
+    "icon": "assets/icon",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/favicon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/favicon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/favicon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^41.2.0",
+    "electron-builder": "^25.0.0"
+  }
+}
