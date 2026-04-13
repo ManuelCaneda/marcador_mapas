@@ -21,11 +21,43 @@
   <!-- Scripts Propios -->
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/db.js" defer></script>
-  <script src="scripts/script.js"  defer></script>
+  <script src="scripts/script.js" type="module" defer></script>
 </head>
 
 <body>
-  
+  <main>
+    <section id="menu-hamburguesa">
+      <h1 class="text-center pt-2 fw-bold">Categorías</h1>
+      <hr>
+      <form action="">
+        <div class="d-flex flex-column gap-2 p-1 px-3 form-group">
+          <label for="buscador" class="fw-bold">Buscador</label>
+          <input type="text" id="buscador" class="form-control" placeholder="Dirección...">
+          <button class="btn btn-primary">Buscar</button>
+        </div>
+      </form>
+      <hr>
+      <div id="crear-categorias" class="">
+        <form action="">
+          <div class="d-flex flex-column gap-2 p-1 px-3 form-group">
+            <label for="crear-categoria" class="fw-bold">Crear categoría</label>
+            <div class="d-flex gap-2">
+              <input type="text" id="crear-categoria" class="form-control" placeholder="Nombre...">
+              <button class="btn btn-primary"> + </button>
+            </div>
+          </div>
+        </form>
+        <hr>
+        <div class="contenedor-lista-marcas">
+          <h3 class="text-center fw-bold">Lista de marcas</h3>
+          <div class="lista-marcas p-2 d-flex flex-column gap-2">
+            <p class="text-center">Cargando...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="map"></div>
+  </main>
 </body>
 
 </html>
