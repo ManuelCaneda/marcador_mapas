@@ -12,7 +12,7 @@
 
 # Marcar Mapa
 
-Aplicación de escritorio para guardar y organizar lugares en un mapa por categorías.
+Aplicación de escritorio para guardar y organizar lugares en un mapa por categorías. Desarrollo recién comenzado.
 
 ## Requisitos
 
